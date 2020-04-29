@@ -12,25 +12,19 @@
     </head>
     <body>
         <header>
-            <div class="container-fluid bg-light">
-                <div class="row">
-                    <div class="col-6">
-                        <button type="button" class="btn btn-light mt-1 mb-1">Home</button>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button type="button" class="btn btn-light mt-1 mb-1">Home</button>
+                <div class="btn-group mt-1 mb-1">
+                    <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">Pierwsza opcja</button>
+                        <button class="dropdown-item" type="button">Druga opcja</button>
+                        <button class="dropdown-item" type="button">Trzecia opcja</button>
                     </div>
-                    <div class="col-6">
-                        <div class="btn-group mt-1 mb-1 float-right">
-                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Menu
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <button class="dropdown-item" type="button">Pierwsza opcja</button>
-                                <button class="dropdown-item" type="button">Druga opcja</button>
-                                <button class="dropdown-item" type="button">Trzecia opcja</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </div>  
+            </nav>
         </header>
         <main>
             <div class="row">
@@ -58,14 +52,33 @@
                     </div>
                 </div>
             </div>
-            <div class="card wiersz p-3">
-                <img class="card-img-top img-fluid" src="mobile-phone-2198770_640.png" alt="Alternatywny opis obrazka">
-                <div class="card-block text-center">
-                  <h4 class="card-title">Tytuł karty</h4>
-                  <p class="card-text">Treść naszej karty, czyli jakiś opis czy cokolwiek chcemy w niej zamieścić.</p>
-                  <a href="#" class="btn btn-primary">Kup teraz!</a>
+            <div class="row wiersz">
+                <div class="col-12 col-lg-6">
+                    <div class="card p-3">
+                        <img class="card-img-top img-fluid" src="mobile-phone-2198770_640.png" alt="Alternatywny opis obrazka">
+                        <div class="card-block text-center">
+                          <h4 class="card-title">Tytuł karty</h4>
+                          <p class="card-text">Treść naszej karty, czyli jakiś opis czy cokolwiek chcemy w niej zamieścić.</p>
+                          <a href="#" class="btn btn-primary">Kup teraz!</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="col-12 col-lg-6 bg-light informacje">
+                    <p>
+                        Procesor:Intel Core i5-4570 </br>
+                        Taktowanie procesora:3200MHz </br>
+                        Liczba rdzeni procesora:4 - Quad Core </br>
+                        Pamięć RAM:4GB DDR3 </br>
+                        Dysk:120GB SSD </br>
+                        Obudowa:SFF - Small Form Factor </br>
+                        Porty USB 3.0:6 </br>
+                        System operacyjny:Windows 10 Home PL </br>
+                        Gwarancja:12 miesięcy </br>
+                        W zestawie:Monitor 22 cale (możliwe ryski, plamki czy badpixele oraz drobne uszkodzenia obudowy. </br>
+                        Wady są wyłącznie wizualne i nie mają wpływu na sprawność sprzętu)., Mysz, Klawiatura, Okablowanie </br>
+                    </p>
+                </div>
+            </div>
             <div class="row wiersz">
                 <div class="card text-center">
                     <div class="card-header">
@@ -84,8 +97,8 @@
                     <div class="card-body">
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                <div class="row">
-                                    <div class="col-6 mr-0">
+                                <div class="row podwiersz">
+                                    <div class="col-6 col-md-4 col-lg-3 mr-0">
                                         <div class="card">
                                             <img class="card-img-top img-fluid" src="laptop-1209008_1280.jpg" alt="Alternatywny opis obrazka">
                                             <div class="card-block text-left p-2">
@@ -94,7 +107,25 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6 mr-0">
+                                    <div class="col-6 col-md-4 col-lg-3 mr-0">
+                                        <div class="card">
+                                            <img class="card-img-top img-fluid" src="laptop-1209008_1280.jpg" alt="Alternatywny opis obrazka">
+                                            <div class="card-block text-left p-2">
+                                                <h6 class="card-title">Tytuł karty</h6>
+                                                <p class="card-text trescProduktow">Treść naszej karty, czyli jakiś opis czy cokolwiek chcemy w niej zamieścić.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 mr-0">
+                                        <div class="card">
+                                            <img class="card-img-top img-fluid" src="laptop-1209008_1280.jpg" alt="Alternatywny opis obrazka">
+                                            <div class="card-block text-left p-2">
+                                                <h6 class="card-title">Tytuł karty</h6>
+                                                <p class="card-text trescProduktow">Treść naszej karty, czyli jakiś opis czy cokolwiek chcemy w niej zamieścić.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 mr-0">
                                         <div class="card">
                                             <img class="card-img-top img-fluid" src="laptop-1209008_1280.jpg" alt="Alternatywny opis obrazka">
                                             <div class="card-block text-left p-2">
@@ -107,7 +138,7 @@
                             </div>
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-6 col-md-4 col-lg-3 mr-0">
                                         <div class="card">
                                             <img class="card-img-top img-fluid" src="laptop-1209008_1280.jpg" alt="Alternatywny opis obrazka">
                                             <div class="card-block text-left p-2">
@@ -116,7 +147,25 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 col-md-4 col-lg-3 mr-0">
+                                        <div class="card">
+                                            <img class="card-img-top img-fluid" src="laptop-1209008_1280.jpg" alt="Alternatywny opis obrazka">
+                                            <div class="card-block text-left p-2">
+                                                <h6 class="card-title">Tytuł karty</h6>
+                                                <p class="card-text trescProduktow">Treść naszej karty, czyli jakiś opis czy cokolwiek chcemy w niej zamieścić.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 mr-0">
+                                        <div class="card">
+                                            <img class="card-img-top img-fluid" src="laptop-1209008_1280.jpg" alt="Alternatywny opis obrazka">
+                                            <div class="card-block text-left p-2">
+                                                <h6 class="card-title">Tytuł karty</h6>
+                                                <p class="card-text trescProduktow">Treść naszej karty, czyli jakiś opis czy cokolwiek chcemy w niej zamieścić.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 mr-0">
                                         <div class="card">
                                             <img class="card-img-top img-fluid" src="laptop-1209008_1280.jpg" alt="Alternatywny opis obrazka">
                                             <div class="card-block text-left p-2">
@@ -129,7 +178,7 @@
                             </div>
                             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-6 col-md-4 col-lg-3 mr-0">
                                         <div class="card">
                                             <img class="card-img-top img-fluid" src="laptop-1209008_1280.jpg" alt="Alternatywny opis obrazka">
                                             <div class="card-block text-left p-2">
@@ -138,7 +187,25 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 col-md-4 col-lg-3 mr-0">
+                                        <div class="card">
+                                            <img class="card-img-top img-fluid" src="laptop-1209008_1280.jpg" alt="Alternatywny opis obrazka">
+                                            <div class="card-block text-left p-2">
+                                                <h6 class="card-title">Tytuł karty</h6>
+                                                <p class="card-text trescProduktow">Treść naszej karty, czyli jakiś opis czy cokolwiek chcemy w niej zamieścić.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 mr-0">
+                                        <div class="card">
+                                            <img class="card-img-top img-fluid" src="laptop-1209008_1280.jpg" alt="Alternatywny opis obrazka">
+                                            <div class="card-block text-left p-2">
+                                                <h6 class="card-title">Tytuł karty</h6>
+                                                <p class="card-text trescProduktow">Treść naszej karty, czyli jakiś opis czy cokolwiek chcemy w niej zamieścić.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-3 mr-0">
                                         <div class="card">
                                             <img class="card-img-top img-fluid" src="laptop-1209008_1280.jpg" alt="Alternatywny opis obrazka">
                                             <div class="card-block text-left p-2">
@@ -179,7 +246,6 @@
                     </div>
                 </div>
             </div>
-
         </footer>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

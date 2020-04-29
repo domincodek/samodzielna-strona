@@ -1,13 +1,35 @@
-@media (max-width: 500px) {
-  body main div.wiersz {
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
-  }
+body main div.wiersz {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
 }
-@media (max-width: 500px) {
+body main div.wiersz div.podwiersz {
+  flex-wrap: wrap;
+}
+body main div.wiersz div.informacje {
+  margin-top: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+body main div.wiersz div.informacje p {
+  padding: 10px;
+}
+@media (max-width: 576px) {
   body main p.trescProduktow {
     font-size: 11px;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  body main {
+    width: 600px;
+    margin: 0px auto;
+  }
+}
+@media (min-width: 993px) {
+  body main {
+    width: 960px;
+    margin: 0px auto;
   }
 }
 body footer {
