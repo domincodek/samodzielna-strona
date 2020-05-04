@@ -1,3 +1,8 @@
+body main {
+  width: 100%;
+  max-width: 960px;
+  margin: 0px auto;
+}
 body main div.wiersz {
   margin-left: 5px;
   margin-right: 5px;
@@ -15,22 +20,8 @@ body main div.wiersz div.informacje {
 body main div.wiersz div.informacje p {
   padding: 10px;
 }
-@media (max-width: 576px) {
-  body main p.trescProduktow {
-    font-size: 11px;
-  }
-}
-@media (min-width: 576px) and (max-width: 992px) {
-  body main {
-    width: 600px;
-    margin: 0px auto;
-  }
-}
-@media (min-width: 993px) {
-  body main {
-    width: 960px;
-    margin: 0px auto;
-  }
+body main p.trescProduktow {
+  font-size: 11px;
 }
 body footer {
   margin-top: 5px;
